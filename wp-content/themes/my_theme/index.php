@@ -16,7 +16,7 @@
 	<header class="container">
 		<div class="row">
 			<div class="large-12 columns">
-				<h1 class="logo">عنوان الموقع</h1>
+				<h1 class="logo"><?php bloginfo('name'); ?></h1>
 			</div>
 			<div class="large-8 right columns">
 				<nav class="top-bar" data-topbar role="navigation">
