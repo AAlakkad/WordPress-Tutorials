@@ -24,7 +24,7 @@ get_header();
 
 							<footer class="tags">
 								<?php
-								$tags = get_tags();
+								$tags = wp_get_post_tags(get_the_ID());
 								foreach($tags as $tag) {
 									echo '<span class="label">' . $tag->name . '</span> ';
 								}
