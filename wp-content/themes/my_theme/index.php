@@ -33,10 +33,13 @@ get_header();
 						</article>
 					</div>
 					<?php } ?>
-				</div>
-				<!--
+                </div>
 				<div class="row">
-					<div class="medium-12 columns">
+                    <div class="medium-12 columns">
+                        <ul class="pagination">
+                            <?= my_paginate_links(['type' => 'list']);?>
+                        </ul>
+
 						<ul class="pagination">
 							<li class="arrow unavailable"><a href="">&laquo;</a></li>
 							<li class="current"><a href="">1</a></li>
@@ -50,7 +53,6 @@ get_header();
 						</ul>
 					</div>
 				</div>
-			-->
 		</div>
 		<?php
 		get_sidebar();
