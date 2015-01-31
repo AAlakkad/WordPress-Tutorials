@@ -108,8 +108,8 @@ function my_paginate_links( $args = '' ) {
                 /** This filter is documented in wp-includes/general-template.php */
                 $page_links[] = '<a class="next arrow" href="' . esc_url( apply_filters( 'paginate_links', $link ) ) . '">' . $args['next_text'] . '</a>';
         endif;
-        $r .= "<ul class='pagination'>\n\t<li>";
-        $r .= join("</li>\n\t<li>", $page_links);
-        $r .= "</li>\n</ul>\n";
+        $r .= "<ul class='pagination'>\n\t";
+        $r .= join("\n\t", $page_links);
+        $r .= "\n</ul>\n";
         return $r;
 }
