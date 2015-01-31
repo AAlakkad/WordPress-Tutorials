@@ -34,7 +34,6 @@ function my_paginate_links( $args = '' ) {
                 'next_text' => __('Next &raquo;'),
                 'end_size' => 1,
                 'mid_size' => 2,
-                'type' => 'plain',
                 'add_args' => $query_args, // array of query args to add
                 'add_fragment' => '',
                 'before_page_number' => '',
@@ -109,19 +108,8 @@ function my_paginate_links( $args = '' ) {
                 /** This filter is documented in wp-includes/general-template.php */
                 $page_links[] = '<a class="next arrow" href="' . esc_url( apply_filters( 'paginate_links', $link ) ) . '">' . $args['next_text'] . '</a>';
         endif;
-        switch ( $args['type'] ) {
-                case 'array' :
-                        return $page_links;
-
-                case 'list' :
-                        $r .= "<ul class='pagination'>\n\t<li>";
-                        $r .= join("</li>\n\t<li>", $page_links);
-                        $r .= "</li>\n</ul>\n";
-                        break;
-
-                default :
-                        $r = join("\n", $page_links);
-                        break;
-        }
+        $r .= "<ul class='pagination'>\n\t<li>";
+        $r .= join("</li>\n\t<li>", $page_links);
+        $r .= "</li>\n</ul>\n";
         return $r;
 }
