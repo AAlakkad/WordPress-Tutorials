@@ -37,7 +37,7 @@ get_header();
 				<div class="row">
                     <div class="medium-12 columns">
                         <ul class="pagination">
-                            <?= my_paginate_links(['type' => 'list']);?>
+                            <?= my_paginate_links(); ?>
                         </ul>
 
 						<ul class="pagination">
