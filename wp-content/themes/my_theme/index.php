@@ -36,9 +36,7 @@ get_header();
                 </div>
 				<div class="row">
                     <div class="medium-12 columns">
-                        <ul class="pagination">
-                            <?= my_paginate_links(); ?>
-                        </ul>
+                        <?= my_paginate_links(); ?>
 
 						<ul class="pagination">
 							<li class="arrow unavailable"><a href="">&laquo;</a></li>
