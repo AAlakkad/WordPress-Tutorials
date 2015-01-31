@@ -75,11 +75,11 @@ function my_paginate_links( $args = '' ) {
                  *
                  * @param string $link The paginated link URL.
                  */
-                $page_links[] = '<a class="prev arrow" href="' . esc_url( apply_filters( 'paginate_links', $link ) ) . '">' . $args['prev_text'] . '</a>';
+                $page_links[] = '<li class="prev arrow"><a href="' . esc_url( apply_filters( 'paginate_links', $link ) ) . '">' . $args['prev_text'] . '</a></li>';
         endif;
         for ( $n = 1; $n <= $total; $n++ ) :
                 if ( $n == $current ) :
-                        $page_links[] = "<a class='current'>" . $args['before_page_number'] . number_format_i18n( $n ) . $args['after_page_number'] . "</a>";
+                        $page_links[] = "<li class='current'><a href=''>" . $args['before_page_number'] . number_format_i18n( $n ) . $args['after_page_number'] . "</a></li>";
                         $dots = true;
                 else :
                         if ( $args['show_all'] || ( $n <= $end_size || ( $current && $n >= $current - $mid_size && $n <= $current + $mid_size ) || $n > $total - $end_size ) ) :
@@ -90,10 +90,10 @@ function my_paginate_links( $args = '' ) {
                                 $link .= $args['add_fragment'];
 
                                 /** This filter is documented in wp-includes/general-template.php */
-                                $page_links[] = "<a href='" . esc_url( apply_filters( 'paginate_links', $link ) ) . "'>" . $args['before_page_number'] . number_format_i18n( $n ) . $args['after_page_number'] . "</a>";
+                                $page_links[] = "<li><a href='" . esc_url( apply_filters( 'paginate_links', $link ) ) . "'>" . $args['before_page_number'] . number_format_i18n( $n ) . $args['after_page_number'] . "</a></li>";
                                 $dots = true;
                         elseif ( $dots && ! $args['show_all'] ) :
-                                $page_links[] = '<span class="dots">' . __( '&hellip;' ) . '</span>';
+                                $page_links[] = '<li class="unavailable"><a href="">'. __( '&hellip;' ) .'</a></li>';
                                 $dots = false;
                         endif;
                 endif;
@@ -106,7 +106,7 @@ function my_paginate_links( $args = '' ) {
                 $link .= $args['add_fragment'];
 
                 /** This filter is documented in wp-includes/general-template.php */
-                $page_links[] = '<a class="next arrow" href="' . esc_url( apply_filters( 'paginate_links', $link ) ) . '">' . $args['next_text'] . '</a>';
+                $page_links[] = '<li class="arrow"><a href="' . esc_url( apply_filters( 'paginate_links', $link ) ) . '">' . $args['next_text'] . '</a></li>';
         endif;
         $r .= "<ul class='pagination'>\n\t";
         $r .= join("\n\t", $page_links);
