@@ -1,5 +1,7 @@
 <?php // Modified for Arabic by Rasheed Bydousi
 
+define('DISABLE_WP_CRON', true);
+
 /** إعدادات برنامج ووردبريس المعرب **/
 
 // ** إعدادات قاعدة البيانات - ينمكنك الحصول على هذه المعلومات من مستضيفك ** //
