@@ -36,7 +36,12 @@ get_header();
                 </div>
 				<div class="row">
                     <div class="medium-12 columns">
-                        <?= my_paginate_links(); ?>
+                        <?php
+                            // add this style as custom style:
+                            // https://gist.github.com/AAlakkad/1f546f6c4a2975d9aab8
+                            $args = array('type' => 'list');
+                            echo paginate_links($args);
+                        ?>
 					</div>
 				</div>
 		</div>
