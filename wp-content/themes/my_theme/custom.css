@@ -1,0 +1,54 @@
+/**
+ * Custom pagination for WordPress to be like Zurb Foundation Pagination, without the need to hook/change classes or items on the paginate_links() function.
+ * This style has been compile using the default Foundation settings.
+ * Final note: .page-number li has a float: right rule which isn't from Foundation, it's custom.
+ */
+ul.page-numbers {
+  display: block;
+  min-height: 1.5rem;
+  margin-left: -.3125rem;
+}
+ul.page-numbers li {
+  height: 1.5rem;
+  color: #222;
+  font-size: .875rem;
+  margin-left: .3125rem;
+  display: block;
+  float: right;
+}
+ul.page-numbers li a.current, ul.page-numbers li span.current {
+  padding: .0625rem .625rem;
+  cursor: default;
+  color: #999;
+}
+ul.page-numbers li a.current:hover, ul.page-numbers li a.current:focus, ul.page-numbers li span.current:hover, ul.page-numbers li span.current:focus {
+  background: transparent;
+}
+ul.page-numbers li a, ul.page-numbers li span {
+  display: block;
+  padding: .0625rem .625rem;
+  color: #999;
+  background: none;
+  border-radius: 3px;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: inherit;
+  transition: background-color 300ms ease-out;
+}
+ul.page-numbers li a:hover, ul.page-numbers li a:focus, ul.page-numbers li span:hover, ul.page-numbers li span:focus {
+  background: #e6e6e6;
+}
+ul.page-numbers li a.unavailable, ul.page-numbers li span.unavailable {
+  cursor: default;
+  color: #999;
+  background: transparent;
+}
+ul.page-numbers li a.current, ul.page-numbers li span.current {
+  background: #008CBA;
+  color: #FFF;
+  font-weight: 700;
+  cursor: default;
+}
+ul.page-numbers li a.current:hover, ul.page-numbers li a.current:focus, ul.page-numbers li span.current:hover, ul.page-numbers li span.current:focus {
+  background: #008CBA;
+}
