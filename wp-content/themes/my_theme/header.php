@@ -10,6 +10,9 @@
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assets/css/main.css">
 
 	<script src="<?php echo get_template_directory_uri(); ?>/assets/js/vendor/modernizr.js"></script>
+	<?php
+	wp_head();
+	?>
 </head>
 <body>
 
