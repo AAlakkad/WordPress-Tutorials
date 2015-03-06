@@ -37,8 +37,7 @@ get_header();
 				<div class="row">
                     <div class="medium-12 columns">
                         <?php
-                            $args = array('type' => 'list');
-                            echo paginate_links($args);
+                            posts_nav_link(' - ', '&laquo; السابق', 'التالي &raquo;');
                         ?>
 					</div>
 				</div>
