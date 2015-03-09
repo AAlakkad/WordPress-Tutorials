@@ -33,14 +33,6 @@
                             'container' => '',
                             'menu_class' => 'right',
                         ]); ?>
-						<ul class="right">
-							<li><a href="#">منوعات</a></li>
-							<li><a href="#">تقني</a></li>
-							<li><a href="#">شخصي</a></li>
-							<li><a href="#">تنمية</a></li>
-							<li><a href="#">صور وفيديو</a></li>
-						</ul>
-
 					</section>
 				</nav>
 			</div>
