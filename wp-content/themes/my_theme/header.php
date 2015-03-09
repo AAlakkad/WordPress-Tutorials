@@ -27,7 +27,8 @@
 						<li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
 					</ul>
 
-					<section class="top-bar-section">
+                    <section class="top-bar-section">
+                        <?php wp_nav_menu(['theme_location' => 'our-custom-menu']); ?>
 						<ul class="right">
 							<li><a href="#">منوعات</a></li>
 							<li><a href="#">تقني</a></li>
