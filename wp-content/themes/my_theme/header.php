@@ -28,7 +28,11 @@
 					</ul>
 
                     <section class="top-bar-section">
-                        <?php wp_nav_menu(['theme_location' => 'our-custom-menu']); ?>
+                        <?php wp_nav_menu([
+                            'theme_location' => 'our-custom-menu',
+                            'container' => '',
+                            'menu_class' => 'right',
+                        ]); ?>
 						<ul class="right">
 							<li><a href="#">منوعات</a></li>
 							<li><a href="#">تقني</a></li>
