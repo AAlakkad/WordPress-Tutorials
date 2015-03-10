@@ -30,7 +30,7 @@
                     <section class="top-bar-section">
                         <?php wp_nav_menu([
                             'theme_location' => 'our-custom-menu',
-                            'container' => '',
+                            'container' => false,
                             'menu_class' => 'right',
                         ]); ?>
 					</section>
