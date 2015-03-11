@@ -12,6 +12,7 @@ add_action('init', function() {
     register_nav_menu('our-custom-menu', 'القائمة الرئيسية');
 });
 
+// Register Sidebar
 add_action('widgets_init', function() {
     register_sidebar();
 });
