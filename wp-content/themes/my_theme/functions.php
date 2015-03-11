@@ -11,3 +11,7 @@ add_action('wp_enqueue_scripts', function() {
 add_action('init', function() {
     register_nav_menu('our-custom-menu', 'القائمة الرئيسية');
 });
+
+add_action('widgets_init', function() {
+    register_sidebar();
+});
