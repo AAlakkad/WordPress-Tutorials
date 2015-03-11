@@ -1,5 +1,5 @@
 <div class="large-4 columns sidebar">
     <div class="card">
-        Sidebar
+        <?php dynamic_sidebar(); ?>
     </div>
 </div>
