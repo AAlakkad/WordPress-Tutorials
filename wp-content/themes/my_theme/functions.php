@@ -14,5 +14,5 @@ add_action('init', function() {
 
 // Register Sidebar
 add_action('widgets_init', function() {
-    register_sidebar();
+    register_sidebar(['before_widget' => '<div class="card">', 'after_widget' => '</div>']);
 });
