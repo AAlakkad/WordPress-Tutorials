@@ -27,15 +27,12 @@
 						<li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
 					</ul>
 
-					<section class="top-bar-section">
-						<ul class="right">
-							<li><a href="#">منوعات</a></li>
-							<li><a href="#">تقني</a></li>
-							<li><a href="#">شخصي</a></li>
-							<li><a href="#">تنمية</a></li>
-							<li><a href="#">صور وفيديو</a></li>
-						</ul>
-
+                    <section class="top-bar-section">
+                        <?php wp_nav_menu([
+                            'theme_location' => 'our-custom-menu',
+                            'container' => false,
+                            'menu_class' => 'right',
+                        ]); ?>
 					</section>
 				</nav>
 			</div>
