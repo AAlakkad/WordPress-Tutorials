@@ -5,11 +5,6 @@
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
 	<title>Simple HTML Template</title>
-
-	<!-- <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/droidarabickufi.css"> -->
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assets/css/main.css">
-
-	<script src="<?php echo get_template_directory_uri(); ?>/assets/js/modernizr.js"></script>
 	<?php
 	wp_head();
 	?>
