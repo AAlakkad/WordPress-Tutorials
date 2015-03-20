@@ -23,4 +23,8 @@ add_action('wp_enqueue_scripts', function() {
 
     wp_register_script('modernizr', get_template_directory_uri(); . '/assets/js/modernizr.js');
     wp_register_script('main-script', get_template_directory_uri(); . '/assets/js/vendor.js', ['modernizr'], false, true);
+
+    wp_enqueue_style('font-droid-arabic-kufi');
+    wp_enqueue_style('main-style');
+    wp_enqueue_script('main-script');
 });
