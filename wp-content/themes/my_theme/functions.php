@@ -27,6 +27,5 @@ add_action('wp_enqueue_scripts', function() {
 
     wp_enqueue_style('font-droid-arabic-kufi');
     wp_enqueue_style('main-style');
-    wp_enqueue_script('theme-vendor');
     wp_enqueue_script('theme-script');
 });
