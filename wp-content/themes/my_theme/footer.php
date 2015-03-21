@@ -6,11 +6,5 @@
 		</div>
 	</div>
 	<?php wp_footer(); ?>
-
-	<script>
-		$(document).ready(function(){
-			$(document).foundation();
-		});
-	</script>
 </body>
 </html>
